@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Match background color with home page */
+    color: #ffffff; /* Set text color to white */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center; /* Center-align projects horizontally */
+  }
+  
+  .project-box {
+    width: 300px; /* Adjust box width as needed */
+    background-color: #ffffff; /* Background color for project box */
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #333; /* Text color for project box */
+  }
+  
+  .project-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .project-box p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .project-box span {
+    font-size: 14px;
+  }
+  
+  .project-box:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+  }
+  
