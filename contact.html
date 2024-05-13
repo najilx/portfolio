@@ -33,50 +33,6 @@
       <!-- Add more social media links as needed -->
     </div>
   </div>
-  <div class="contact-form">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent the default form submission
-      
-      // Get form values
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-
-      // Create a FormData object to send the data to the server
-      var formData = new FormData();
-      formData.append('name', name);
-      formData.append('email', email);
-      formData.append('message', message);
-
-      // Send form data to the server using AJAX
-      fetch('send_email.php', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          alert("Message sent successfully!");
-          // You can redirect the user or perform other actions here
-        } else {
-          alert("Failed to send message. Please try again later.");
-        }
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert("An error occurred. Please try again later.");
-      });
-    });
-  </script>
+  
 </body>
 </html>
