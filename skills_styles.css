@@ -1,62 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1f1f1f; /* Change background color to match home page */
-    color: wheat; /* Change text color to white */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 0 20px;
-  }
-  
-  h2 {
-    text-align: center;
-  }
-  
-  .skill {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .skill img {
-    width: 50px; /* Adjust the width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-  }
-  
-  .skill-info {
-    flex-grow: 1;
-  }
-  
-  .progress-bar {
-    background-color: #ddd;
-    height: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .progress {
-    background-color: #007bff;
-    height: 100%;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-  }
-  .button {
-    background-color: #007bff; /* Blue background color */
-    color: #ffffff; /* White text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Add padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Add pointer cursor on hover */
-    border-radius: 5px; /* Add border radius */
-  }
-  
-  .button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: wheat;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #444;
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

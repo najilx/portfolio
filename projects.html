@@ -7,24 +7,30 @@
   <link rel="stylesheet" href="project_styles.css">
 </head>
 <body>
-  <h2>Projects</h2>
-  <div class="project-container">
-    <div class="project-box" onclick="window.open('https://github.com/najilx/price-comparison-webscarpping', '_blank')">
-      <img src="image/project1_icon.png" alt="Project 1 Icon">
-      <p>Websrcaping</p>
-      <span>A small price comparison website using webscraping done in flask</span>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" onclick="window.open('https://github.com/najilx/price-comparison-webscarpping', '_blank')">
+        <img src="image/project1_icon.png" alt="Project 1 Icon">
+        <h3>Web Scraping</h3>
+        <p>A small price comparison website using web scraping done in Flask</p>
+      </div>
+      <div class="project-card" onclick="window.open('https://github.com/najilx/todo-app', '_blank')">
+        <img src="image/project2_logo.jpeg" alt="Project 2 Icon">
+        <h3>ToDo App</h3>
+        <p>Created a simple todo-app in Flutter with clean UI</p>
+      </div>
+      <div class="project-card" onclick="window.open('https://github.com/najilx/sudoku-solver.git','_blank')">
+        <img src="image/sudoku.svg" alt="Project 3 Icon">
+        <h3>Sudoku Solver</h3>
+        <p>A simple Sudoku solver using backtracking in Python</p>
+      </div>
     </div>
-    <div class="project-box" onclick="window.open('https://github.com/najilx/todo-app', '_blank')">
-      <img src="image/project2_logo.jpeg" alt="Project 2 Icon">
-      <p>ToDo</p>
-      <span>Created a simple todo-app in flutter with clean ui</span>
-    </div>
-    <div class="project-box" onclick="window.open('https://github.com/najilx/sudoku-solver.git','_blank')">
-      <img src="image/sudoku.svg" alt="project 3 icon">
-      <p>sudoku-solver</p>
-      <span>A simple sudoku solver using backtracking in python</span>
-    </div>
-    <!-- Add more project boxes as needed -->
   </div>
 </body>
 </html>

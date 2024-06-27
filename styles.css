@@ -3,15 +3,16 @@ body {
   background-color: #1f1f1f;
   margin: 0;
   padding: 0;
-  color: wheat; /* Text color */
+  color: wheat;
 }
 
 .navbar {
   background-color: #333;
   overflow: hidden;
-  position: fixed; /* Position navbar fixed at the top */
-  width: 100%; /* Full width */
-  top: 0; /* Align at the top */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar a {
@@ -21,56 +22,52 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  margin-right: 20px; /* Add space between navbar items */
+  transition: background-color 0.3s;
 }
 
 .navbar a:hover {
   background-color: #555;
 }
 
-
 .container {
   text-align: center;
-  padding-top: 80px; /* Add space for navbar */
+  padding-top: 100px;
 }
 
-.text {
-  text-align: center; /* Align main heading text to center */
-}
-
-h1 {
+.text h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
 }
 
-p {
+.text p {
   font-size: 1.8em;
-  animation: fadeIn 0.5s ease-out; /* Add fade-in animation */
+  animation: fadeIn 0.5s ease-out;
 }
 
 .aboutMeBox {
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
-  margin-top: 40px; /* Increase top margin */
-  width: 60%; /* Reduce width */
-  margin-left: auto; /* Center horizontally */
-  margin-right: auto; /* Center horizontally */
-  text-align: center; /* Align text inside the box to center */
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
 }
 
 .avatar {
   width: 80px;
   height: 80px;
-  border-radius: 50%; /* Circular avatar */
-  margin-right: 20px;
-  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .aboutMe {
   font-size: 1.2em;
-  margin-top: 20px; /* Add space above the paragraph */
-  margin-bottom: 20px; /* Add space below the paragraph */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @keyframes fadeIn {
